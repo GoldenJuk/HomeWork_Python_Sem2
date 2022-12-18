@@ -12,4 +12,6 @@ def GetSum(num):
     return sum    
 n = input('Введите число: ')
 res = GetSum(n)
-print(res)
+print()
+print(f'Сумма цифр введенного числа = {res}')
+print()
