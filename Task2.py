@@ -5,7 +5,7 @@
 
 def GetList(num):
     my_list = []
-    for i in range(1,num + 1,1):
+    for i in range(1,num + 1):
         my_list.append(round(((1+1/i)**i),2)) 
     return my_list
 

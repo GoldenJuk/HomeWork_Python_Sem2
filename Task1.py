@@ -4,11 +4,10 @@
 # 0,56 -> 11
 
 def GetSum(num):
-    sum = 0     
-    my_list = num.split('.')
-    for i in range(len(my_list)):
-        for j in range(len(my_list[i])):
-            sum = sum + int(my_list[i][j])
+    sum = 0
+    for char in num:
+        if char.isdigit():
+            sum += int(char)
     return sum    
 n = input('Введите число: ')
 res = GetSum(n)
